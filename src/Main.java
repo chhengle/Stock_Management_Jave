@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         ProductController productController = new ProductController();
-        initializeData(productController);
+//        initializeData(productController);
         ProductView productView = new ProductView(productController);
         Scanner scanner = new Scanner(System.in);
 
@@ -90,23 +90,23 @@ public class Main {
 
         scanner.close();
     }
-    private static void initializeData(ProductController productController) {
-        // Sample data initialization
-        productController.insertProduct(new Product("Product 1", 10.0, 50));
-        productController.insertProduct(new Product("Product 2", 20.0, 40));
-        productController.insertProduct(new Product("Product 3", 30.0, 30));
-        productController.insertProduct(new Product("Product 4", 40.0, 20));
-        productController.insertProduct(new Product("Product 5", 50.0, 10));
-        productController.insertProduct(new Product("Product 6", 60.0, 5));
-        productController.insertProduct(new Product("Product 7", 70.0, 3));
-        productController.insertProduct(new Product("Product 8", 80.0, 1));
-        productController.insertProduct(new Product("Product 9", 90.0, 2));
-        productController.insertProduct(new Product("Product 10", 100.0, 7));
-        productController.insertProduct(new Product("Product 11", 110.0, 8));
-        productController.insertProduct(new Product("Product 12", 120.0, 6));
-        productController.insertProduct(new Product("Product 13", 130.0, 4));
-        productController.insertProduct(new Product("Product 14", 140.0, 9));
-        productController.insertProduct(new Product("Product 15", 150.0, 12));
+        private static void initializeData(ProductController productController) {
+            // Sample data initialization
+            productController.insertProduct(new Product("Product 1", 10.0, 50));
+            productController.insertProduct(new Product("Product 2", 20.0, 40));
+            productController.insertProduct(new Product("Product 3", 30.0, 30));
+            productController.insertProduct(new Product("Product 4", 40.0, 20));
+            productController.insertProduct(new Product("Product 5", 50.0, 10));
+            productController.insertProduct(new Product("Product 6", 60.0, 5));
+            productController.insertProduct(new Product("Product 7", 70.0, 3));
+            productController.insertProduct(new Product("Product 8", 80.0, 1));
+            productController.insertProduct(new Product("Product 9", 90.0, 2));
+            productController.insertProduct(new Product("Product 10", 100.0, 7));
+            productController.insertProduct(new Product("Product 11", 110.0, 8));
+            productController.insertProduct(new Product("Product 12", 120.0, 6));
+            productController.insertProduct(new Product("Product 13", 130.0, 4));
+            productController.insertProduct(new Product("Product 14", 140.0, 9));
+            productController.insertProduct(new Product("Product 15", 150.0, 12));
     }
 }
 // Compare this snippet from src/controller/ProductController.java:
